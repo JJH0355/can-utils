@@ -1,5 +1,2 @@
 #!/bin/bash
-set -e
-
-cmake -S . -B build
-cmake --build build
+mkdir build && cd build && cmake .. && cd .. && make -C build 

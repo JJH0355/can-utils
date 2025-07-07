@@ -43,7 +43,7 @@ jobs:
           # detect_search_depth: 2
           # detect_args: '--detect.diagnostic=true'
           # detect_config_path: '/Users/Config/application.properties'
-          coverity_build_command: mkdir build && cd build && cmake .. && cd .. && make -C build 
+          coverity_build_command: build.sh
           coverity_clean_command: "cmake --build build --target clean"
           # coverity_config_path: /Users/Config/coverity.yml
           # coverity_args: --config-override capture.build.build-command=mvn install
