@@ -1,0 +1,9 @@
+capture:
+  encoding: UTF-8
+  build:
+    aspnet-compiler: true
+    build-command: cmake -S . -B build && cmake --build build
+    clean-command: cmake --build build --target clean
+  languages:
+    include:
+      - c-family
