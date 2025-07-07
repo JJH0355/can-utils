@@ -1,0 +1,23 @@
+{
+    "data": {
+        "polaris": {
+            "application": {
+                "name": "SoftFlow_Demo"
+            },
+            "project": {
+                "name": "can-utils"
+            },
+            "branch": {
+                "name": "master"
+            },
+            "assessment": {
+                "types": [
+                    "SAST"
+                ]
+            },
+            "serverurl": "https://polaris.blackduck.com/",
+            "accesstoken": "j41ld5s9nh43n1s7tu3ukief38327278jmjkims7t637pf9s8a73qt85nk9iau5fsvladjv1f8mo2",
+            "onboarding": "false"
+        }
+    }
+}
