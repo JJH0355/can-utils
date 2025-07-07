@@ -38,6 +38,15 @@ jobs:
           
           ### Mark build status if policy violating issues are found
           mark_build_status: 'success'
+
+          ### Uncomment below to add arbitrary CL parameters
+          # detect_search_depth: 2
+          # detect_args: '--detect.diagnostic=true'
+          # detect_config_path: '/Users/Config/application.properties'
+          coverity_build_command: cmake -S . -B build && cmake --build build
+          coverity_clean_command: cmake --build build --target clean
+          # coverity_config_path: /Users/Config/coverity.yml
+          # coverity_args: --config-override capture.build.build-command=mvn install
           
     ### Uncomment below configuration to add custom logic based on return status
     # - name: cmdLine
